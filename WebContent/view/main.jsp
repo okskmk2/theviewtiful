@@ -7,7 +7,7 @@
 <%@ include file="include/head.html" %>
 </head>
 <body>
-<%@ include file="include/header.jsp"%>
+<%@ include file="include/header-with-w3.jsp"%>
 <section class="w3-container">섹션</section>
 <%@ include file="include/footer.jsp"%>
 </body>
