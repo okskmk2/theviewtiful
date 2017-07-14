@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+header {
+	border: 0.5px solid #7b7b7b;
+}
+
+header nav {
+	display: inline-block;
+	background-color: #957d84;
+}
+
+nav ul {
+	display: inline;
+	vertical-align: top;
+}
+
+nav ul li {
+	display: inline;
+}
