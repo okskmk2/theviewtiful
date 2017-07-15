@@ -1,0 +1,27 @@
+<div><i>bar</i></div>
+<nav>
+    <a href="home"><img>로고</img></a>
+    <div id="menu">
+        <a href="action">action</a>
+        <a href="consign">consign</a>
+        <a href="market">market</a>
+        <a>...</a>
+    </div>
+    <div id="search">        
+        <input type="search" placeholder="검색">
+        <button><i>검색아이콘</i></button>
+    </div>
+    <div>
+        <c:choose>
+            <c:when test="${empty 로그인세션}">
+                <a href="login">로그인</a>
+                <a href="signup">회원가입</a>
+            </c:when>
+            <c:otherwise>
+                <a href="mypage"><i>사용자아이콘</i></a>
+                <a href="alarm"><i>알림아이콘</i></a>
+                <a href="logout">로그아웃</a>
+            </c:otherwise>
+        </c:choose>
+    </div>
+</nav>

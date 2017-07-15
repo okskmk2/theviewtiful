@@ -4,10 +4,10 @@
 <html>
 <head>
 <title>Insert title here</title>
-<%@ include file="include/head.html" %>
+<%@ include file="include/head-include.html" %>
 </head>
-<body>
-<%@ include file="include/header-with-w3.jsp"%>
+<body onresize="checkwidth()">
+<%@ include file="include/header.jsp"%>
 <section class="w3-container">섹션</section>
 <%@ include file="include/footer.jsp"%>
 </body>
