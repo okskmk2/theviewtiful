@@ -1,7 +1,7 @@
 function toggleBar(target){
     var ele = document.getElementById(target);
     if(!ele.style.display || ele.style.display=="none")
-        ele.style.display = "block";
+        ele.style.display = "inline-block";
     else
         ele.style.display = "none";
 }
