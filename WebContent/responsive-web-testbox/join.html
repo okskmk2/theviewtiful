@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.container{margin-top: 90px}
+a{text-decoration: none;}
+/*mobile*/
+@media (max-width: 720px){
+	section{
+		width: 100%;
+		margin: auto;
+	}
+}
+/*widescreen*/
+@media (min-width: 721px) {
+	section{
+		width: 300px;
+		margin: auto;
+	}	
+}
+h2{text-align: center; margin-bottom: 60px}
+#email-join{border:1px solid gray; padding:7px;margin: 20px auto 150px; text-align: center;}
+p{text-align: center;}
+</style>
+</head>
+<body>
+<div class="container">
+<section>
+<h2>회원가입</h2>
+<div id="email-join">
+<a href="#">이메일 회원가입</a>
+</div>
+<p>
+이미 회원이신가요? <a href="#">로그인</a><br>
+<a href="#">비밀번호를 잊으셨나요?</a>
+</p>
+</section>
+</div>
+</body>
+</html>
