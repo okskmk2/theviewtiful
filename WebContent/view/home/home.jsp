@@ -23,8 +23,8 @@
         <button><i class="fa fa-search" aria-hidden="true"></i></button>
     </div>
     <div id="user-menu">
-        <a href="/theviewtiful/user/login">login</a>
-        <a href="/theviewtiful/user/signup">join</a>
+        <a href="/theviewtiful/user/signin">로그인</a>
+        <a href="/theviewtiful/user/signup">회원가입</a>
     </div>
 </nav>
 ${homeList}        
