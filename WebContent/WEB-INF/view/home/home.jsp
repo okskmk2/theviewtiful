@@ -27,6 +27,6 @@
         <a href="/theviewtiful/user/signup">회원가입</a>
     </div>
 </nav>
-${homeList}        
+${artList}        
 </body>
 </html>
