@@ -1,0 +1,26 @@
+<header>
+    <nav>
+        <ul>
+            <li><a>The Viewtiful</a></li>
+            <li><a>Auction</a></li>
+            <li><a>Consign</a></li>
+            <li><a>About</a></li>
+        </ul>
+        <span>
+		<i class="fa fa-search" aria-hidden="true"></i><input type="search"
+		placeholder="검색">
+	</span>
+        <ul>
+            <c:choose>
+                <c:when test="${empty cus_info}">
+                    <li><a href="signup.do">회원가입</a></li>
+                    <li><a href="signin.do">로그인</a></li>
+                </c:when>
+                <c:otherwise>
+                    <li><a href="alarm.do">알림</a></li>
+                    <li><a><i class="fa fa-user-circle" aria-hidden="true"></i>${cus_info.cus_nm }</a></li>
+                </c:otherwise>
+            </c:choose>
+        </ul>
+    </nav>
+</header>
