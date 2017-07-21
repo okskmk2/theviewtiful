@@ -1,21 +1,152 @@
 @CHARSET "UTF-8";
 
 /*global*/
-*{padding: 0;margin: 0;}
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+li {
+	list-style-type: none;
+}
+
+h4 {
+	margin-bottom: 6px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:LINK, a:VISITED {
+	color: black;
+}
+
+nav a {
+	margin-right: 5px;
+}
+
+section {
+	padding: 9px 14px 12px;
+}
 
 /*mobile*/
-@media (max-width: 720px) {
-    nav {border-bottom: 1px solid gray;padding: 5px}
+@media ( max-width : 720px) {
+	#nav-main {
+		display: flex;
+		flex-direction: row;
+	}
+	#header-nav {
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+		border-right: 1px solid gray;
+	}
+	#header-nav.off {
+		display: none;
+	}
+	#bar {
+		padding: 5px;
+		display: block;
+	}
 }
 
 /*widescreen*/
-@media (min-width: 721px) {
-    nav {border-bottom: 1px solid gray;padding: 5px 100px}
+@media ( min-width : 721px) {
+	#nav-main {
+		display: flex;
+		flex-direction: column;
+	}
+	#header-nav {
+		display: flex;
+		flex-direction: row;
+		padding: 10px 100px;
+		border-bottom: 1px solid gray;
+	}
+	#bar {
+		display: none;
+	}
 }
-    nav ul{display: inline;}
-    nav ul li {display: inline;list-style-type: none;margin-left: -5px;}
-    nav ul li a {text-decoration: none; color: black;padding: 5px;}
-    nav ul li a:hover {background-color: #e3eaec}
-    nav ul li a:visited {color: black;}
-    nav span{border-left: 1px solid gray;padding-left: 5px}
-    nav span i {margin-right: 5px}
+
+nav ul {
+	display: inline;
+}
+
+nav ul li {
+	display: inline;
+	margin-left: -5px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+}
+
+nav ul li a:hover {
+	background-color: #e3eaec
+}
+
+nav ul li a:visited {
+	color: black;
+}
+
+nav span {
+	border-left: 1px solid gray;
+	padding-left: 5px
+}
+
+nav span i {
+	margin-right: 5px
+}
+
+footer, #main {
+	display: flex;
+}
+
+.row {
+	display: flex;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+}
+
+.g1 {
+	flex-grow: 1
+}
+
+.g2 {
+	flex-grow: 2
+}
+
+.g3 {
+	flex-grow: 3
+}
+
+.g4 {
+	flex-grow: 4
+}
+
+footer {
+	padding: 3px;
+	border-top: 1px solid gray;
+	background-color: black;
+	color: white;
+	font-size: 13px;
+}
+
+footer a:LINK, footer a:VISITED {
+	color: white;
+}
+
+footer section section {
+	padding: 0
+}
+}

@@ -1,18 +1,19 @@
-function toggleBar(target){
-    var ele = document.getElementById(target);
-    if(!ele.style.display || ele.style.display=="none")
-        ele.style.display = "inline-block";
-    else
-        ele.style.display = "none";
+function toggleBar(target) {
+	document.getElementById("header-nav").classList.toggle("off");
 }
-function openBar(target){
-    document.getElementById(target).style.display = "block";
+function showBar(target) {
+	document.getElementById(target).style.display = "flex";
+	document.getElementById(target).style.flexDirection = "column";
 }
-function closeBar(target){
-    document.getElementById(target).style.display = "none";
+function hideBar(target) {
+	document.getElementById(target).style.display = "none";
 }
-function resize(){
-    if(document.body.clientWidth > 720)
-    openBar("bar_target");
-    else closeBar("bar_target");
+function resize() {
+	if (document.body.clientWidth > 720) {
+		//showBar("header-nav");
+
+	} else {
+		//hideBar("header-nav");
+	}
 }
+

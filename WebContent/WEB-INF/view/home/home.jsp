@@ -3,11 +3,15 @@
 <html>
 <head>
 <title>홈페이지</title>
-<%@include file="../include/head-include.jsp" %>
+<%@include file="../include/head-include.html" %>
 </head>
 <body onresize="resize()">
-<%@include file="../include/nav-include.jsp" %>
+<div id="nav-main">
+<%@include file="../include/header-nav.jsp" %>
+<div id="main">
 <%@include file="main.jsp" %>
+</div>
+</div>
 <%@include file="../include/footer.jsp" %>
 </body>
 </html>
