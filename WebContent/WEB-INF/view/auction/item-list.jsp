@@ -1,4 +1,13 @@
-﻿<div id="auction-list">
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<!DOCTYPE>
+<html>
+<head>
+<title>홈페이지</title>
+<%@include file="../include/head-include.jsp" %>
+</head>
+<body onresize="resize()">
+<%@include file="../include/nav-include.jsp" %>
+<div id="auction-list">
     (jstl - c:foreach start)
     <article class="auction-item">
         <div><img src="${itemimage}" />
@@ -25,3 +34,6 @@
     </article>
     (jstl - c:foreach end)
 </div>
+<%@include file="../include/footer.jsp" %>
+</body>
+</html>

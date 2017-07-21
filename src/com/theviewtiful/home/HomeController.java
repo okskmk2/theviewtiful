@@ -13,8 +13,9 @@ public class HomeController {
 	@Autowired
 	HomeService homesvc;
 
-	@RequestMapping("home.do")
+	@RequestMapping("/home")
 	public String execute(Model model) {
+		System.out.println("home controlelr");
 		List<Object> artList =homesvc.artlist();
 		model.addAttribute("artList", artList);
 		//model.addAttribute("artList", "아트리스트");

@@ -20,7 +20,7 @@
 	</context:component-scan>
 
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close"
-		p:driverClassName="org.mariadb.jdbc.Driver" p:url="jdbc:mariadb://127.0.0.1:3306/db_theviewtiful"
+		p:driverClassName="org.mariadb.jdbc.Driver" p:url="jdbc:mariadb://127.0.0.1:3306/tvf_origin"
 		p:username="theviewtiful" p:password="1234" />
 	<tx:annotation-driven />
 
