@@ -1,4 +1,4 @@
-<div id="auction-list">
+﻿<div id="auction-list">
     (jstl - c:foreach start)
     <article class="auction-item">
         <div><img src="${itemimage}" />

@@ -1,4 +1,4 @@
-<div>
+﻿<div>
     <header>
         <h4>
             알람
@@ -7,7 +7,9 @@
     </header>
     <section id="alarm-list">
         <article>
-            <figure>(프로필사진)</figure>
+            <figure>
+                <!-- (프로필사진) -->
+            </figure>
             <section>
                 <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes.
                 </p>
@@ -15,7 +17,9 @@
             </section>
         </article>
         <article>
-            <figure>(프로필사진)</figure>
+            <figure>
+                <!-- (프로필사진) -->
+            </figure>
             <section>
                 <p>Nullam quis risus eget urna mollis ornare is ornaresociis natoque penatibus et magnis dis parturient montes.
                 </p>
@@ -23,7 +27,9 @@
             </section>
         </article>
         <article>
-            <figure>(프로필사진)</figure>
+            <figure>
+                <!-- (프로필사진) -->
+            </figure>
             <section>
                 <p>Nullam quis risus eget urna mollis ornare v. Cum svel eu leo. Cum rna mollociis natoque penatibus et magnis dis parturient montes.
                 </p>

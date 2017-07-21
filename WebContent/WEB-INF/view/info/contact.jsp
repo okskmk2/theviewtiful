@@ -32,7 +32,7 @@
             <tr>
                 <th>* 답변방법</th>
                 <td>
-                    <input id="email" type="radio" name="answer-type" value="email" onchange="changetab(event)" checked="true"><span>이메일</span>
+                    <input id="email" type="radio" name="answer-type" value="email" onchange="changetab(event)" checked="checked"><span>이메일</span>
                     <input id="mobile" type="radio" name="answer-type" value="mobile" onchange="changetab(event)"><span>전화</span>
                     <div style="display: block" id="email-container">
                         <input type="email" name="email">

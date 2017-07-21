@@ -7,3 +7,19 @@
 
 를 jar를 추가했다. html dom  parser in java 이다.
 https://jsoup.org/
+
+String saveFolder = "/upload";
+		ServletContext ctx = sess.getServletContext();
+		String realFolder = ctx.getRealPath(saveFolder);
+		MultipartFile mf = item.getImgFile();
+		String fileName = mf.getOriginalFilename();
+		File uploadFile = new File(realFolder + File.separator + fileName);
+		System.out.println(uploadFile);
+		try {
+			mf.transferTo(uploadFile); 
+		} catch (IllegalStateException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		item.setItemImg(fileName);

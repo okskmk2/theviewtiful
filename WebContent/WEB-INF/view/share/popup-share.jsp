@@ -1,0 +1,11 @@
+<h2>공유하기</h2>
+<div>
+	<button>페이스북</button>
+	<button>카카오톡</button>
+	<button>링크</button>
+</div>
+<div>
+	<div>http://theviewtiful.com/viewer/12345</div>
+	<button>복사하기</button>
+</div>
+<button>닫기</button>
