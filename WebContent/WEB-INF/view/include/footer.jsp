@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" %>
 <footer>
+<div class="wrap g1">
 	<section class="g1">
         <h4>더뷰티풀</h4>
             대표 류태경 | 사업자등록번호 123-12-12345 | 통신판매신고 2017-123-123
@@ -7,7 +8,7 @@
             <div>&copy;더뷰티풀</div>
             <nav><a>이용약관</a><a>개인정보취급방침</a></nav>
 	</section>
-	<section class="row g1">
+	<section class="row g1 service">
     	<section class="g1">
 			<h4>서비스</h4>
 			<ul>
@@ -35,4 +36,5 @@
 			</ul>
 		</section>
 	</section>
+</div>
 </footer>

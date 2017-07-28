@@ -21,7 +21,7 @@
 
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close"
 		p:driverClassName="org.mariadb.jdbc.Driver" p:url="jdbc:mariadb://127.0.0.1:3306/tvf_origin"
-		p:username="theviewtiful" p:password="1234" />
+		p:username="tvf_DML" p:password="1234" />
 	<tx:annotation-driven />
 
 	<bean id="transactionManager"
@@ -37,5 +37,24 @@
 			</bean>
 		</property>
 	</bean>
+	
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+     <property name="host" value="smtp.worksmobile.com" />
+     <property name="port" value="465" />
+     <property name="username" value="TCcompany" />
+     <property name="password" value="test123!" />
+     <property name="defaultEncoding" value="utf-8" />
+
+     <property name="javaMailProperties">
+        <props>
+            <prop key="mail.transport.protocol">465</prop>
+            <prop key="mail.smtp.auth">true</prop>
+            <prop key="mail.smtp.starttls.enable">false</prop>
+        </props>
+     </property>
+</bean>
+
+
+
 
 </beans>

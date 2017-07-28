@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 public class HomeDAOImpl implements HomeDAO {
 	
 	@Autowired
-	SqlSessionFactory factory;
+	private SqlSessionFactory factory;
 
 	@Override
 	public List<Object> artlist() {

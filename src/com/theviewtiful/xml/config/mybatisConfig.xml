@@ -4,5 +4,6 @@
 	<mappers>
 		<mapper resource="com/theviewtiful/xml/mapper/sampleMapper.xml" />
 		<mapper resource="com/theviewtiful/xml/mapper/homeMapper.xml" />
+		<mapper resource="com/theviewtiful/xml/mapper/userMapper.xml" />
 	</mappers>
 </configuration>

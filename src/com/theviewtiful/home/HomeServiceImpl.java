@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class HomeServiceImpl implements HomeService {
 	
 	@Autowired
-	HomeDAO homedao;
+	private HomeDAO homedao;
 
 	@Override
 	public List<Object> artlist() {

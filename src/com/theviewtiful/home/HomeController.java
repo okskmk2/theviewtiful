@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 	
 	@Autowired
-	HomeService homesvc;
+	private HomeService homesvc;
 
 	@RequestMapping("/home")
 	public String execute(Model model) {
@@ -19,6 +19,6 @@ public class HomeController {
 		List<Object> artList =homesvc.artlist();
 		model.addAttribute("artList", artList);
 		//model.addAttribute("artList", "아트리스트");
-		return "home/home";
+		return "home/main";
 	}
 }

@@ -1,9 +1,20 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<!DOCTYPE>
+<html>
+<head>
+<title>홈페이지</title>
+<%@include file="../include/head-include" %>
+</head>
+<body>
+<div id="nav-main">
+<%@include file="../include/header-nav.jsp" %>
+${userInfo}${result }
+<div id="main">
     <div>
         <div id="auction-list">
             <div id="auction-item">
                 <img src="/theviewtiful/images/noimg.png" alt="">
-                <a href="auction.do?id=">작품구매하기</a>
+                <a href="auction.do?id=" class="btn">작품구매하기</a>
             </div>
         </div>
         <section id="about">
@@ -58,3 +69,8 @@
             </div>
         </section>
     </div>
+</div>
+</div>
+<%@include file="../include/footer.jsp" %>
+</body>
+</html>
