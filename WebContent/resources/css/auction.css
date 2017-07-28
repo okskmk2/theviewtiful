@@ -52,6 +52,32 @@
 	
 }
 
-#item-chart{
-	
+div#purchase-item-container{
+	border:0;
+	display: flex;
+}
+#purchase-item-container a.btn{
+	padding: 0;
+}
+
+div#item-detail-desc{
+	margin-top: 30px;
+}
+
+div#item-detail-desc img{
+	width: 100%;
+}
+
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
 }
