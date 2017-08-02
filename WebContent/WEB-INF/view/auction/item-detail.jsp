@@ -11,7 +11,7 @@
 <script src="/theviewtiful/resources/js/auction-item-detail.js"></script>
 </head>
 <body>
-	<%@include file="../include/header-nav.jsp"%>
+	<%@include file="../include/header.jsp"%>
 	<div id="main">
 		<div id="item-detail-container">
 			<div class="row">

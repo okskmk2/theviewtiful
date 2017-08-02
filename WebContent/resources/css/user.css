@@ -1,0 +1,19 @@
+/*
+작성자:이은성
+등록일자:20170731
+적용 url : /theviewtiful/user/*
+ */
+
+@charset "UTF-8";
+/*유저 공통양식  */
+.user-box{
+	margin:100px auto;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+.user-box h1{
+	margin-bottom: 70px;
+	text-align: center;
+}

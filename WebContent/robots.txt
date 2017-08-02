@@ -1,0 +1,5 @@
+User-agent: *
+Crawl-delay: 1000
+Allow: /auction/
+Disallow : /admin/
+sitemap: www.theviewtiful.com/sitemap.xml

@@ -61,7 +61,7 @@ public class UserController {
 		return "user/signup-email-form";
 	}
 
-	// 회원가입 이메일 process
+	// 회원가입 이메일data
 	//TODO 8월 1일 화요일 법인등록 후 카페24 등록후 ssl
 	@RequestMapping("/signup-email-data")
 	public String signupEmailData(WebRequest request) {
@@ -76,5 +76,18 @@ public class UserController {
 		System.out.println("비밀번호재설정");
 		return "user/password-reset";
 	}
+	
+	// 비밀번호재설정data goto
+	@RequestMapping("/password-reset-data")
+	public String passwordResetData() {
+		System.out.println("비밀번호재설정신청");
+		return "user/password-result";
+	}
 
+	// 새비밀번호 goto
+	@RequestMapping("/passwordnew")
+	public String passwordnew() {
+		System.out.println("새비밀번호");
+		return "user/passwordnew";
+	}
 }

@@ -1,5 +1,12 @@
-@CHARSET "UTF-8";
+/*	
+	작성자 : 이은성
+	등록일자 : 2010713
+	url: /theviewtiful/*
+	공통 스타일시트이다.
+	정의내용 : 일반엘리먼트
+ 	font-family, header, #main, footer의 내용*/
 
+@CHARSET "UTF-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 /*global*/
@@ -26,8 +33,34 @@ a:LINK, a:VISITED {
 	color: black;
 }
 
+p{
+	color: #333;
+}
+
+button, input[type=submit], .btn{
+	vertical-align:middle;
+	background-color: white;
+	border: 1px solid #999;
+	padding: 2px 7px;
+	font-size: 1em;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+button:hover, input[type=submit]:hover, .btn:hover{
+	background-color: #eee;
+}
+
 nav a:hover {
 	border-bottom: 2px solid #2d8afd;
+}
+
+#header-nav #search input[type=search]{
+	padding: 0 10px;
+}
+
+#search i {
+	padding-top: 4px;
 }
 
 /*mobile*/
@@ -60,7 +93,7 @@ nav a:hover {
 	header {
 		height: 28px; width : 100%;
 		background-color: white;
-		border-bottom: 1px solid gray;
+		border-bottom: 1px solid #897680;
 		padding: 12px 0 9px;
 		position: fixed;
 		display: flex;
@@ -99,9 +132,7 @@ nav a:hover {
 	#search input {
 		vertical-align: text-top;
 	}
-	#search i {
-		vertical-align: text-top;
-	}
+
 	#user-menu {
 		display: flex;
 		justify-content: flex-end;
@@ -143,7 +174,7 @@ nav a:hover {
 
 footer {
 	padding:5px;
-	background-color: black;
+	background-color: #1d1812;
 	color: white;
 	font-size: 13px;
 	display: flex;
@@ -170,17 +201,6 @@ footer section section {
 	min-width: 90px;
 }
 
-.btn {
-	font-size: 20px;
-	vertical-align:middle;
-	padding: 5px 50px;
-	border: 1px solid #ccc;
-}
-
-.btn:hover{
-	background-color: #f0f0f0;
-}
-
 .link:link {
 	text-decoration: underline;
 	color: #0079f2;
@@ -194,5 +214,4 @@ footer section section {
 label {
 	display: flex;
 	justify-content: space-between;
-	margin: 10px;
 }

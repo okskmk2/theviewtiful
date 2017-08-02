@@ -6,8 +6,8 @@
 	<nav id="header-nav">
 		<div id="home-menu" class="g1">
 			<a href="/theviewtiful/home" class="home">더뷰티풀</a> <a
-				href="/theviewtiful/auction/item-list">auction</a> <a
-				href="/theviewtiful/consign">consign</a> <a
+				href="/theviewtiful/auction/list">auction</a> <a
+				href="/theviewtiful/consign/info">consign</a> <a
 				href="/theviewtiful/market">market</a> <a href="#">about</a>
 			<div id="search">
 				<i class="material-icons mr10">search</i> <input type="search"

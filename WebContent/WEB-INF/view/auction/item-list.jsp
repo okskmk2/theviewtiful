@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="/theviewtiful/resources/css/auction.css">
 </head>
 <body>
-<%@include file="../include/header-nav.jsp" %>
+<%@include file="../include/header.jsp" %>
 <div id="main">
     <article class="auction-item">
         <div><img src="/theviewtiful/resources/images/mille.jpg" />
@@ -35,7 +35,7 @@
                 <h4>총 작품 금액 : 9,300,000,000원</h4>
                 <p>작품 구매 단위 : 50,000원</p>
             </section>
-	        <a href="item-detail" class="btn">구매하기</a>
+	        <a href="detail" class="btn">구매하기</a>
         </section>
     </article>
 <%-- 

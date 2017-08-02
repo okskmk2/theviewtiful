@@ -7,7 +7,7 @@
 </head>
 <body>
 <div id="nav-main">
-<%@include file="../include/header-nav.jsp" %>
+<%@include file="../include/header.jsp" %>
 ${userInfo}${result }
 <div id="main">
     <div>
