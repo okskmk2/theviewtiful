@@ -18,8 +18,8 @@ public class UserDAOImpl implements UserDAO{
 	@Override
 	public HashMap<String, Object> checkUser(Map<String, String[]> map) {
 		SqlSession session =factory.openSession();
-		System.out.println("user-dao-impl-pre:"+map.get("email"));
-		System.out.println("user-dao-impl-pre:"+map.get("password"));
+		System.out.println("user-dao-impl-pre-email:"+map.get("email"));
+		System.out.println("user-dao-impl-pre-password:"+map.get("password"));
 		HashMap<String, Object> userdata = session.selectOne("user.checkUser",map);
 		System.out.println("user-dao-impl-post:"+userdata);
 		session.close();

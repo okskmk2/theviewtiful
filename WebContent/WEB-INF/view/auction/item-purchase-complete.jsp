@@ -1,4 +1,19 @@
-﻿<section>
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<!DOCTYPE>
+<html>
+<head>
+<title>홈페이지</title>
+<%@include file="../include/head-include" %>
+<link rel="stylesheet" href="/theviewtiful/resources/css/???.css">
+<style type="text/css">
+???
+</style>
+</head>
+<body>
+<div id="nav-main">
+<%@include file="../include/header.jsp" %>
+<div id="main">
+<div>
     <h1>구매하신 상품의 결제가 예약되었습니다.</h1>
     <h2>입금기한 내에 상품이 판매종료, 품절될 경우 예약이 자동으로 취소됩니다.</h2>
     <table>
@@ -41,4 +56,9 @@
     </table>
     <a></a>
     <a></a>
-</section>
+</div>
+</div>
+</div>
+<%@include file="../include/footer.jsp" %>
+</body>
+</html>

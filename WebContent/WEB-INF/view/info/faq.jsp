@@ -1,3 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE>
+<html>
+<head>
+<title>홈페이지</title>
+<%@include file="../include/head-include" %>
+<link rel="stylesheet" href="/theviewtiful/resources/css/???.css">
+<style type="text/css">
+???
+</style>
+</head>
+<body>
+<div id="nav-main">
+<%@include file="../include/header.jsp" %>
+<div id="main">
 <div>
     <h1>자주하는 질문</h1>
     <div>
@@ -11,11 +27,13 @@
         </nav>
         <div class="accordion-container">
             <div id="tab-usehow">
+            <c:forEach items="${faqList}" var="faq">
                 (jstl c:foreach start)
                 <section class="accordion-item">
-                    <h2>${질문}</h2>
-                    <p>${답}</p>
+                    <h2>${faq.question}</h2>
+                    <p>${faq.answer}</p>
                 </section>
+            </c:forEach>
                 (jstl c:foreach end)
             </div>
             <div id="tab-purchase">
@@ -60,11 +78,12 @@
             </div>
         </div>
         <div class="pagination">
-            (jstl c:foreach start)
-            <a href="#?page=${index}">${index}</a> (jstl c:foreach end)
+        <c:forEach items="${faqpage}" var="index" >
+            <a href="faq?page=${index}">${index}</a> 
+        </c:forEach>
         </div>
         <div>
-            <p>원하시는 답변을 찾지 못하셨다면, 문의하기에 문의하여주세요.</p><a href="contact.html">문의하기</a>
+            <p>원하시는 답변을 찾지 못하셨다면, 문의하기에 문의하여주세요.</p><a href="contact">문의하기</a>
         </div>
     </div>
 </div>
@@ -83,3 +102,8 @@
         }
     }
 </script>
+</div>
+</div>
+<%@include file="../include/footer.jsp" %>
+</body>
+</html>

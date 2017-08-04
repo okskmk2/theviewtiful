@@ -1,0 +1,16 @@
+{
+    "itemCnt":"20"
+    ,"curPage":"1"
+    ,"REC":
+    [
+        {
+            "endDate":"YYYY-MM-DD-mm-ss"
+            ,"artworkPrice":""
+            ,"unitPrice":""
+            ,"soldUnit":""
+            ,"artworkName":""
+            ,"artistName":""
+            ,"artworkImgUrl":""
+        } 
+    ]
+}

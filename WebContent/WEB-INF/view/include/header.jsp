@@ -15,8 +15,8 @@
 			</div>
 		</div>
 		<div id="user-menu" class="g3">
-			<a href="/theviewtiful/user/signup" class="mr10">회원가입</a>
-			<a href="/theviewtiful/user/signin" >로그인</a> 
+			<a href="/theviewtiful/user/signup-form" class="mr10">회원가입</a>
+			<a href="/theviewtiful/user/signin-form" >로그인</a> 
 		</div>
 	</nav>
 </header>

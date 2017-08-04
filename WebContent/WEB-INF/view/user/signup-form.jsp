@@ -25,7 +25,7 @@
             <a href="signup-email-form" class="btn">이메일 회원가입</a>
             <div>
                 <p>
-                    이미 회원이신가요? <a href="signin" class="link">로그인</a><br>
+                    이미 회원이신가요? <a href="signin-form" class="link">로그인</a><br>
                     <a href="password-reset" class="link">비밀번호를 잊으셨나요?</a>
                 </p>
             </div>

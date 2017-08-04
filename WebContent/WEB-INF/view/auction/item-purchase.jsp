@@ -1,7 +1,23 @@
-﻿<header>
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<!DOCTYPE>
+<html>
+<head>
+<title>홈페이지</title>
+<%@include file="../include/head-include" %>
+<link rel="stylesheet" href="/theviewtiful/resources/css/???.css">
+<style type="text/css">
+???
+</style>
+</head>
+<body>
+<div id="nav-main">
+<%@include file="../include/header.jsp" %>
+<div id="main">
+<div>
+<hgroup>
     <h1>주문/결제</h1>
     <h3>주문하실 작품을 결제해 주세요.</h3>
-</header>
+</hgroup>
 <form method="post" action="item-purchase.do">
     <h4>주문상품</h4>
     <table>
@@ -87,3 +103,9 @@
     </table>
     <input type="submit" value="결제하기">
 </form>
+</div>
+</div>
+</div>
+<%@include file="../include/footer.jsp" %>
+</body>
+</html>

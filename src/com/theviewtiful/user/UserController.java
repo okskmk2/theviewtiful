@@ -15,7 +15,7 @@ import com.theviewtiful.mail.EmailPublisherService;
 
 
 @Controller
-@RequestMapping("/user/*")
+@RequestMapping("/user")
 public class UserController {
 	
 	Logger log = Logger.getLogger(this.getClass());
@@ -27,20 +27,20 @@ public class UserController {
 	private UserService usersvc;
 	
 	// 로그인 goto
-	@RequestMapping("/signin")
+	@RequestMapping("/signin-form")
 	public String login(WebRequest request) {
 		System.out.println("로그인");
-		return "user/signin";
+		return "user/signin-form";
 	}
 	
 	// 로그인 data
-	@RequestMapping("/signin-data")
+	@RequestMapping("/signin")
 	public String signinData(WebRequest request, Model model, HttpSession session) {
 		
 		HashMap<String, Object> userData = usersvc.checkUser(request.getParameterMap());
 		if (userData == null) {
-			model.addAttribute("result", "실패");
-			return "home/main";
+			model.addAttribute("result", "아이디나 비밀번호가 맞지 않습니다.");
+			return "user/signin-form";
 		}else {
 			session.setAttribute("userInfo", userData);
 		return "home/main";
@@ -48,10 +48,10 @@ public class UserController {
 	}
 
 	// 회원가입 goto
-	@RequestMapping("/signup")
+	@RequestMapping("/signup-form")
 	public String signup(WebRequest request) {
 		System.out.println("회원가입");
-		return "user/signup";
+		return "user/signup-form";
 	}
 	
 	// 회원가입 이메일 폼 goto
@@ -63,7 +63,7 @@ public class UserController {
 
 	// 회원가입 이메일data
 	//TODO 8월 1일 화요일 법인등록 후 카페24 등록후 ssl
-	@RequestMapping("/signup-email-data")
+	@RequestMapping("/signup-email")
 	public String signupEmailData(WebRequest request) {
 		System.out.println("회원가입 이메일 데이타");
 		emailsvc.publish("이메일내용");

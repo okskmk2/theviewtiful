@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>tvf data viewer</title>
+<style type="text/css">
+body{
+	display: flex;
+}
+nav{
+	width: 400px;
+	border-right: 1px solid gray;
+}
+#jsonviewer{
+	width: 400px;
+	padding-left: 20px;
+}
+</style>
+</head>
+<body>
+<nav>
+<h2>상단 네비게이션</h2>
+<select onchange="showReqJson(this)">
+<option>home</option>
+<option>auction</option>
+<option>consign</option>
+<option>market</option>
+<option>mypage</option>
+<option>info</option>
+</select>
+<h2>사용자</h2>
+<select onchange="showReqJson(this)">
+<option>user/signin</option>
+<option>user/signup</option>
+<option>user/password-email-form</option>
+<option>user/passwordnew</option>
+<option>user/password-reset</option>
+<option>user/password-result</option>
+<option>user/signup-email-form</option>
+<option>user/signup-result</option>
+</select>
+<h2>옥션</h2>
+<select onchange="showReqJson(this)">
+<option>auction/list</option>
+<option>auction/detail</option>
+</select>
+<h2>마이페이지</h2>
+<select onchange="showReqJson(this)">
+<option>mypage/artwork/list</option>
+<option>mypage/artwork/detail</option>
+<option>mypage/favorite/list</option>
+<option>mypage/favorite/detail</option>
+<option>mypage/wish/list</option>
+<option>mypage/wish/detail</option>
+<option>mypage/cart/list</option>
+<option>mypage/cart/detail</option>
+<option>mypage/alarm/list</option>
+<option>mypage/alarm/detail</option>
+</select>
+</nav>
+<div id="jsonviewer">
+<div id="request">
+<h2 id="request-servlet-url"></h2>
+<pre>13</pre>
+</div>
+<div id="response"></div>
+</div>
+<script type="text/javascript">
+function showReqJson(e) {	
+	var pre = document.querySelector("#request pre");
+	pre.innerHTML = "";
+	var cur_value = e.options[e.selectedIndex].text;
+	document.getElementById("request-servlet-url").innerHTML = cur_value;
+	var xhr = new XMLHttpRequest;
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4 && xhr.status == 200){
+			pre.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.open("get", "/theviewtiful/json/"+cur_value+".json", true);
+	xhr.send(null);
+}
+</script>
+</body>
+</html>
